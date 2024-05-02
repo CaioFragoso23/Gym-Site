@@ -97,3 +97,29 @@ nav {
 .button-header:hover{
   color: red;
 }
+
+@keyframes slider {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+.logos{
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+}
+
+.logos-slide{
+  width: 100%;
+  display: inline-block;
+  animation: 5s slider infinite linear;
+}
+
+.logos-slide img{
+  height: 35px;
+  margin: 0 70px;
+}
