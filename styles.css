@@ -279,3 +279,101 @@ nav {
   right: 8px;
 }
 
+.our-mission-section{
+  display: flex;
+  margin: 150px 113px;
+}
+.mission-container{
+  display: grid;
+  grid-template-areas: 
+  "welcome image year"
+  "welcome image description"
+  "trophy image description";
+  width: 1215px;
+  height: 858px;
+  background-color: black;
+  color: white;
+}
+
+.welcome-box{
+  color: white;
+  padding: 90px 70px;
+  height: 406px;
+  grid-area: welcome;
+  font-size: 22px;
+}
+
+.trophy-box{
+  color: white;
+  background-color: red;
+  padding: 80px;
+  height: 452px;
+  grid-area: trophy;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.trophy-box > p {
+  font-size: 32px;
+  text-align: center;
+}
+
+.img-box{
+  height: 100%;
+  width: 30%;
+  grid-area: image;
+}
+
+.img-box > img {
+  filter: grayscale(100%);
+}
+
+.year-box{
+  background-color: red;
+  width: 495px;
+  height: 269px;
+  grid-area: year;
+  padding: 0 90px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.year-box > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.year-number{
+  font-size: 187px;
+}
+.plus{
+  font-size: 52px;
+}
+.year-description{
+  font-size: 32px;
+  text-align: center;
+}
+
+.description-box{
+  display: flex;
+  text-align: left;
+  grid-area: description;
+  width: 495px;
+  height: 589px;
+  padding: 40px 50px
+}
+
+.description-box > h1 {
+  font-size: 55px;
+}
+
+.description-box > h1 > bold {
+  color: red;
+  
+}
